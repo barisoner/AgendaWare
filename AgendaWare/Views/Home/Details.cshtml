@@ -1,0 +1,48 @@
+﻿@model Event
+
+<div class="container">
+    <h2>Etkinlik Detayı - @Model.title</h2>
+    <br />
+
+    <form asp-controller="Home" asp-action="Details" method="post">
+
+        <div asp-validation-summary="ModelOnly" class="text-danger">
+
+            <div class="mb-3">
+                <label asp-for="id" class="form-label">No</label>
+                <input asp-for="id" readonly="readonly" class="form-control">
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="title" class="form-label">Etkinlik Başlığı</label> <span asp-validation-for="title" class="text-danger"></span>
+                <input asp-for="title" class="form-control">
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="start" class="form-label">Etkinlik Başlığı</label> <span asp-validation-for="start" class="text-danger"></span>
+                <input asp-for="start" class="form-control">
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="end" class="form-label">Etkinlik Başlığı</label> <span asp-validation-for="end" class="text-danger"></span>
+                <input asp-for="end" class="form-control">
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="color" class="form-label">Etkinlik Başlığı</label> <span asp-validation-for="color" class="text-danger"></span>
+                <input asp-for="color" class="form-control">
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="textColor" class="form-label">Etkinlik Başlığı</label> <span asp-validation-for="textColor" class="text-danger"></span>
+                <input asp-for="textColor" class="form-control">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Güncelle</button>
+
+        </div>
+
+    </form>
+
+</div>
+
