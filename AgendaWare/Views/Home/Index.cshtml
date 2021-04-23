@@ -40,7 +40,7 @@
                 },
                 eventClick: function (arg) {
                     if (confirm('Etkinliği Silmek Istediğinizden Eminmisiniz')) {
-                 
+                        //Barış: Ajax Call
                          var data = { id: arg.event.id };
                          $.ajax({
                              url: '@Url.Action("Delete", "Home")',
